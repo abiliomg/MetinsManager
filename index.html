@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <table>
+            <tr >
+                <td>CH</td>
+                <td>Metin: <input type="text" value="50" style="width: 20px;"/></td>
+                <td>Metin: <input type="text" value="60" style="width: 20px;"/></td>
+                
+            </tr>
+            <tr>
+                <td>CH1</td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+            </tr>
+            <tr>
+                <td>CH2</td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+             </tr>
+            <tr>
+                <td>CH3</td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+            </tr>
+            <tr>
+                <td>CH4</td>
+                <td><input type="checkbox"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox"/><input type="checkbox" class="reset"/></td>
+            </tr>
+            <tr>
+                <td>CH5</td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+            </tr>
+            <tr>
+                <td>CH6</td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+                <td><input type="checkbox" class="reset"/><input type="checkbox" class="reset"/></td>
+            </tr>
+        </table>
+        <button onclick="resetCheck()">Reset</button>
+    </body>
+    <script>
+        function resetCheck() {
+            let inputs = document.querySelectorAll('.reset')
+            inputs.forEach(element => {
+                element.checked = false
+            });
+        }
+
+    </script>
+</html>
